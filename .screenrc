@@ -1,6 +1,6 @@
 startup_message off
 #deflogin on
-defscrollback 1024
+defscrollback 10000
 shell -$SHELL
 #shelltitle "cardamom"
 
@@ -92,7 +92,7 @@ hardstatus alwayslastline
 
 #hardstatus string '%{gk}[%{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= w}%?%+Lw%?%? %{g}][%{d}%l%{g}][ %{= w}%Y/%m/%d %0C:%s%a%{g} ]%{W}'
 
-hardstatus string '%{= kG}[ %{G}%H %{g} ][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %h]'
+hardstatus string '%{= kG}[ %{G}%H %{g} ][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}]'
 
 
 
@@ -107,5 +107,6 @@ altscreen on
 
 # term on X scrolling mechanism
 termcapinfo xterm* ti@:te@
-#caption string "%w"
-#caption     always        "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %72=Load: %l %{wk}"
+#caption string "%h"
+#caption     always        "%h %{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %72=Load: %l %{wk}"
+caption always "%h"

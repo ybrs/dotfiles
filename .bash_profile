@@ -48,6 +48,12 @@ printf '\ek%s\e\\' "$HPWD" # "$(eval echo ${MYPS})"
 PROMPT_COMMAND="screen_set_window_title; $PROMPT_COMMAND"
 #fi
 
+#...
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+alias ls="ls -G"
+
+
+
 PS1="\$ "
 
 
